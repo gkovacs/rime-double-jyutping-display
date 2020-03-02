@@ -48,15 +48,19 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
+    - affix_segmentor@jyutping_to_putonghua_lookup
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
+    - reverse_lookup_translator
+    - script_translator@jyutping_to_putonghua_lookup
   filters:
     - simplifier@zh_simp
     - simplifier@zh_tw
     - uniquifier
+    - reverse_lookup_filter@jyutping_to_putonghua_reverse_lookup
 
 speller:
   alphabet: 'zyxwvutsrqponmlkjihgfedcba;/,.'
