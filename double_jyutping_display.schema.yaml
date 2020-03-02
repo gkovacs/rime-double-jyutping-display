@@ -12,9 +12,10 @@ schema:
     聲調輸入 q平 v上 x去 （雙擊爲陽調）
     提供多種字體轉換方案
   dependencies:
-    - leimaau_jyutping
     - td_pinyin_flypy
+    - terra_pinyin.extended
     - double_jyutping
+    - leimaau_jyutping
     - leimaau_zhuyin_jyutping_nospaces
 
 switches:
@@ -296,6 +297,10 @@ translator:
     #- 'xform r aa'
     #- 'xform q ng'
 
+abc_segmentor:
+  extra_tags:
+    - jyutping_to_putonghua_lookup  # 與拼音（反查碼）混打
+
 jyutping_to_putonghua_lookup:
   tag: jyutping_to_putonghua_lookup
   prefix: "`J"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
@@ -409,10 +414,6 @@ jyutping_to_putonghua_reverse_lookup:
   #  - xform/ /\｜/
   #  - xform/^/（粵拼：〔/
   #  - xform/$/〕）/
-
-abc_segmentor:
-  extra_tags:
-    - jyutping_to_putonghua_lookup  # 與拼音（反查碼）混打
 
 punctuator:
   import_preset: default
