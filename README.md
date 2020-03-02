@@ -27,7 +27,7 @@ Then install dependencies and `gkovacs/rime-double-jyutping-display` using plum:
 bash rime-install gkovacs/rime-double-jyutping gkovacs/rime-td-pinyin-flypy gkovacs/rime-double-jyutping-display
 ```
 
-Finally edit `default.custom.yaml` and add `td_double_jyutping` to the schema list:
+Finally edit `default.custom.yaml` and add `double_jyutping` to the schema list:
 
 ```bash
 patch:
