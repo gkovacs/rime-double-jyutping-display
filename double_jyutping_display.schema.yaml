@@ -310,7 +310,7 @@ jyutping_to_putonghua_lookup:
   suffix: "`"
   spelling_hints: 10
   dictionary: leimaau_jyutping
-  prism: double_jyutping_display
+  prism: double_jyutping
   preedit_format:
     - xform/(^|[ '])u/$1G/
     - xform/(^|[ '])y/$1Q/
