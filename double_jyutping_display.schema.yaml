@@ -198,7 +198,7 @@ menu:
 translator:
   dictionary: leimaau_jyutping
   spelling_hints: 9
-  prism: double_jyutping_display
+  prism: double_jyutping
   preedit_format:
     - xform/(^|[ '])u/$1G/
     - xform/(^|[ '])y/$1Q/
