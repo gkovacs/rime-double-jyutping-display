@@ -426,6 +426,7 @@ putonghua_to_jyutping_lookup:
   dictionary: terra_pinyin.extended
   prism: td_pinyin_flypy_allowcap
   preedit_format:
+    - 'xlit ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz'
     - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
